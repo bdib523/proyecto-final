@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f8ff;
+    color: #222;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Cabecera y menú */
+header {
+    background-color: #023e8a;
+    color: white;
+    padding: 15px 0;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #90e0ef;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.menu a {
+    padding: 8px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    background-color: #0077b6;
+    border-radius: 5px;
+}
+
+/* Portada */
+.hero {
+    min-height: 70vh;
+    background-image: 
+        linear-gradient(rgba(0, 80, 150, 0.5), rgba(0, 80, 150, 0.5)),
+        url("../imagenes/rincon-turismo.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+}
+
+.boton {
+    background-color: #ffb703;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Secciones generales */
+section {
+    padding: 50px 0;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo h2 {
+    color: #023e8a;
+    font-size: 30px;
+}
+
+.titulo p {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Tarjetas */
+.tarjeta {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #cccccc;
+}
+
+.tarjeta h3 {
+    color: #023e8a;
+    margin: 10px 0;
+}
+
+.destinos {
+    background-color: #f6e7c1;
+}
+
+.etiqueta {
+    background-color: #caf0f8;
+    color: #023e8a;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* Galería */
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.galeria-grid figure {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #cccccc;
+    overflow: hidden;
+}
+
+.galeria-grid figcaption {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    color: #023e8a;
+}
+
+/* Artículo */
+.articulo {
+    background-color: white;
+}
+
+.articulo .contenido {
+    background-color: #eaf6ff;
+    padding: 20px;
+    border-left: 5px solid #0077b6;
+    border-radius: 10px;
+}
+
+.articulo h3 {
+    color: #2d6a4f;
+    margin-bottom: 10px;
+}
+
+.articulo ul {
+    margin-left: 25px;
+}
+
+/* Tabla */
+.tabla-responsive {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: #023e8a;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #cccccc;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #eef7ff;
+}
+
+/* Contacto */
+.contacto {
+    background-color: #0077b6;
+    color: white;
+}
+
+form {
+    background-color: #1d8dcc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* Pie de página */
+footer {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    .barra {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .galeria-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 520px) {
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}

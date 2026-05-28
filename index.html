@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Agencia de turismo en Rincón de la Victoria: playas, cultura, gastronomía, rutas y experiencias en la Costa del Sol.">
+  <title>Turismo Rincón de la Victoria</title>
+  <link rel="icon" type="image/png" href="imagenes/logo.png">
+  <link rel="stylesheet" href="estilo/flexboxgrid.min.css">
+  <link rel="stylesheet" href="estilo/estilo.css">
+</head>
+<body>
+  <header>
+    <div class="container barra">
+      <a class="logo" href="#inicio">Rincón <span>Turismo</span></a>
+      <nav aria-label="Menú principal">
+        <ul class="menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#destinos">Destinos</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#articulo">Artículo</a></li>
+          <li><a href="#precios">Precios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container">
+        <h1>Descubre Rincón de la Victoria</h1>
+        <p>Una agencia turística pensada para ayudarte a vivir la playa, la historia, la gastronomía y la naturaleza de uno de los pueblos más bonitos de Málaga.</p>
+        <a class="boton" href="#contacto">Reserva tu experiencia</a>
+      </div>
+    </section>
+
+    <section id="destinos" class="destinos">
+      <div class="container">
+        <div class="titulo">
+          <h2>Experiencias destacadas</h2>
+          <p>Planes para familias, parejas, grupos de amigos y visitantes que quieren conocer Rincón de la Victoria de una forma cercana.</p>
+        </div>
+        <div class="row">
+          <article class="col-xs-12 col-md-4">
+            <div class="tarjeta">
+              <img src="imagenes/cueva-tesoro.jpg" alt="Ilustración de la Cueva del Tesoro">
+              <h3>Cueva del Tesoro</h3>
+              <p><span class="etiqueta">Cultura</span></p>
+              <p>Visita guiada a una de las cuevas marinas más conocidas de Europa, llena de leyendas, salas naturales e historia.</p>
+            </div>
+          </article>
+          <article class="col-xs-12 col-md-4">
+            <div class="tarjeta">
+              <img src="imagenes/paseo-maritimo.jpg" alt="Ilustración del paseo marítimo">
+              <h3>Paseo marítimo</h3>
+              <p><span class="etiqueta">Playa</span></p>
+              <p>Ruta tranquila junto al mar para disfrutar del ambiente costero, los chiringuitos, el deporte y las vistas del Mediterráneo.</p>
+            </div>
+          </article>
+          <article class="col-xs-12 col-md-4">
+            <div class="tarjeta">
+              <img src="imagenes/rutas.jpg" alt="Ilustración de rutas naturales">
+              <h3>Rutas naturales</h3>
+              <p><span class="etiqueta">Naturaleza</span></p>
+              <p>Excursiones por senderos, miradores y zonas verdes cercanas, ideales para respirar aire libre y hacer fotografías.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria">
+      <div class="container">
+        <div class="titulo">
+          <h2>Galería de imágenes</h2>
+          <p>Un pequeño recorrido visual por algunos de los planes que ofrece nuestra agencia.</p>
+        </div>
+        <div class="galeria-grid">
+          <figure>
+            <img src="imagenes/playa-rincon.jpg" alt="Playa de Rincón de la Victoria">
+            <figcaption>Playas del municipio</figcaption>
+          </figure>
+          <figure>
+            <img src="imagenes/cueva-tesoro.jpg" alt="Cueva del Tesoro">
+            <figcaption>Cueva del Tesoro</figcaption>
+          </figure>
+          <figure>
+            <img src="imagenes/gastronomia.jpg" alt="Plato de gastronomía local">
+            <figcaption>Gastronomía local</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="articulo" class="articulo">
+      <div class="container">
+        <div class="titulo">
+          <h2>Artículo turístico</h2>
+          <p>Consejos para aprovechar tu visita a Rincón de la Victoria.</p>
+        </div>
+        <div class="row middle-xs">
+          <div class="col-xs-12 col-md-6">
+            <img src="imagenes/gastronomia.jpg" alt="Gastronomía y turismo en Rincón de la Victoria">
+          </div>
+          <article class="col-xs-12 col-md-6">
+            <div class="contenido">
+              <h3>Un día perfecto en Rincón de la Victoria</h3>
+              <p>La mañana puede empezar con un paseo por la playa y un desayuno frente al mar. Después, recomendamos visitar la Cueva del Tesoro, un lugar especial por su origen marino y por las historias que la rodean.</p>
+              <p>Al mediodía, nada mejor que probar espetos, pescado fresco y platos típicos de la costa malagueña. Por la tarde, nuestra agencia organiza rutas suaves para descubrir miradores, calles con encanto y rincones tranquilos del municipio.</p>
+              <ul>
+                <li>Plan ideal para todos los públicos.</li>
+                <li>Actividades de playa, cultura y naturaleza.</li>
+                <li>Opciones adaptadas a diferentes horarios.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="precios">
+      <div class="container">
+        <div class="titulo">
+          <h2>Tabla de paquetes</h2>
+          <p>Compara nuestras experiencias principales y elige la que más se adapta a tu viaje.</p>
+        </div>
+        <div class="tabla-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Paquete</th>
+                <th>Incluye</th>
+                <th>Duración</th>
+                <th>Precio desde</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ruta playa</td>
+                <td>Paseo marítimo, explicación local y parada fotográfica</td>
+                <td>2 horas</td>
+                <td>12 €</td>
+              </tr>
+              <tr>
+                <td>Cultura y cueva</td>
+                <td>Visita guiada por la Cueva del Tesoro y alrededores</td>
+                <td>3 horas</td>
+                <td>18 €</td>
+              </tr>
+              <tr>
+                <td>Experiencia completa</td>
+                <td>Playa, gastronomía, cultura y ruta natural</td>
+                <td>1 día</td>
+                <td>35 €</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+      <div class="container">
+        <div class="titulo">
+          <h2>Contacta con nosotros</h2>
+          <p>Cuéntanos qué tipo de viaje quieres y prepararemos una experiencia a tu medida.</p>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-6 info-contacto">
+            <h3>Agencia Rincón Turismo</h3>
+            <p><strong>Dirección:</strong> Paseo Marítimo, Rincón de la Victoria, Málaga</p>
+            <p><strong>Email:</strong> info@rinconturismo.es</p>
+            <p><strong>Teléfono:</strong> 600 123 456</p>
+            <p>Horario de atención: lunes a sábado, de 9:00 a 19:00.</p>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <form onsubmit="enviarSolicitud(event)">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" type="text" placeholder="Tu nombre" required>
+
+              <label for="plan">Plan que te interesa</label>
+              <select id="plan" required>
+                  <option value="">Selecciona una opción</option>
+                  <option>Ruta playa</option>
+                  <option>Cultura y cueva</option>
+                  <option>Experiencia completa</option>
+              </select>
+
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" rows="5" placeholder="Escribe tu consulta"></textarea>
+
+              <button type="submit" class="boton">Enviar solicitud</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+<script>
+    function enviarSolicitud(event) {
+        event.preventDefault();
+
+        alert("Solicitud enviada correctamente. Gracias por contactar con Turismo Rincón de la Victoria.");
+
+        event.target.reset();
+
+        window.location.href = "#inicio";
+    }
+</script>
+  <footer>
+    <p>&copy; 2026 Rincón Turismo. Proyecto web final LM realizado por Badr Diboune El Wasmi</p>
+  </footer>
+</body>
+</html>
